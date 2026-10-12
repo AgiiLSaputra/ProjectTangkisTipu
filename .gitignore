@@ -1,0 +1,31 @@
+# File dokumentasi implementasi komunitas (tidak perlu di-push)
+QUICK_START.md
+SETUP_KOMUNITAS.md
+IMPLEMENTATION_SUMMARY.md
+FINAL_SUMMARY.md
+README_KOMUNITAS.md
+README_IMPLEMENTATION.md
+CHANGELOG_KOMUNITAS.md
+VISUAL_SUMMARY.txt
+INDEX.md
+setup-komunitas.sh
+
+# OS files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
