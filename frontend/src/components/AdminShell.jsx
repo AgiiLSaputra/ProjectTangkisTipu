@@ -6,7 +6,7 @@ const NAV_ITEMS = [
   { id: 'dashboard', label: 'Dashboard', icon: 'grid_view', path: 'admin' },
   { id: 'set-soal', label: 'Set Soal', icon: 'quiz', path: 'set-soal' },
   { id: 'kode-kelas', label: 'Kode Kelas', icon: 'school', path: 'kode-kelas' },
-  { id: 'pengaturan', label: 'Pengaturan', icon: 'settings', path: null },
+  { id: 'komunitas', label: 'Komunitas', icon: 'groups', path: 'komunitas' },
 ]
 
 export default function AdminShell({ active = 'dashboard', onNavigate = () => {}, onKeluar = () => {}, children }) {
