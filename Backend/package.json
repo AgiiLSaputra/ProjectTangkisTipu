@@ -8,7 +8,8 @@
     "dev": "nodemon src/server.js",
     "start": "node src/server.js",
     "test": "node --test test/*.test.js",
-    "test:integration": "node --test test/integration/*.test.js"
+    "test:integration": "node --test test/integration/*.test.js",
+    "seed:admin": "node src/db/seed-admin.js"
   },
   "keywords": [],
   "author": "",
