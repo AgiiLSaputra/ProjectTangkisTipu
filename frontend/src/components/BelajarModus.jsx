@@ -38,27 +38,34 @@ const TRACKS = {
       items: [
         {
           label: "Modul Game & Akun Phishing",
-          value: "48% Korban",
+          value: "15.284 Laporan",
           width: 100,
           valueClass: "text-danger-red",
           barClass: "bg-danger-red",
         },
         {
           label: "Uang Jajan & Like Medsos",
-          value: "31% Korban",
+          value: "9.873 Laporan",
           width: 65,
           valueClass: "text-secondary",
           barClass: "bg-secondary-container",
         },
         {
           label: "Data & Pinjol Pelajar",
-          value: "21% Korban",
+          value: "6.692 Laporan",
           width: 44,
           valueClass: "text-primary",
           barClass: "bg-primary",
         },
+        {
+          label: "Catut Akun & Link DM",
+          value: "12.145 Laporan",
+          width: 79,
+          valueClass: "text-tertiary",
+          barClass: "bg-tertiary",
+        },
       ],
-      note: "Edukasi sejak dini terbukti menurunkan risiko terkena manipulasi digital hingga 73%.",
+      note: "Urut sesuai modul 01–04. Data remaja usia 13–18 tahun per 31 Agt 2026. Edukasi sejak dini terbukti menurunkan risiko terkena manipulasi digital hingga 73%.",
     },
     modules: [
       {
