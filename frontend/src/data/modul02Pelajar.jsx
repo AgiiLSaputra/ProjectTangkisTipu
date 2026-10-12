@@ -3,7 +3,7 @@ export const modul02Pelajar = {
   num: '02',
   jalur: 'Jalur Pelajar & Remaja',
   kategori: 'Uang Jajan Palsu',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Waspada Tinggi',
   title: 'Tugas Like/Follow Berkedok Uang Jajan',
   icon: 'thumb_up',

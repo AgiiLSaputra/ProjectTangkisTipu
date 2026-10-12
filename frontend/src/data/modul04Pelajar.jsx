@@ -3,7 +3,7 @@ export const modul04Pelajar = {
   num: '04',
   jalur: 'Jalur Pelajar & Remaja',
   kategori: 'Manipulasi Sosial IG/WA',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Analisis Pesan',
   title: 'Catut Akun Teman & Link Undian di DM',
   icon: 'alternate_email',

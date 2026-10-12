@@ -3,7 +3,7 @@ export const modul04Dewasa = {
   num: '04',
   jalur: 'Jalur Dewasa & Karier',
   kategori: 'Tawaran Kerja Palsu',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Analisis Pesan',
   title: 'Tawaran Kerja & Deposit Paruh Waktu Palsu',
   icon: 'badge',

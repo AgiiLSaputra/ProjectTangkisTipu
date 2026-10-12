@@ -3,7 +3,7 @@ export const modul01Lansia = {
   num: '01',
   jalur: 'Jalur Ramah Lansia',
   kategori: 'Telepon Panik',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Dasar',
   title: '"Nak, Aku Kecelakaan—Butuh Uang Rumah Sakit!"',
   icon: 'call',

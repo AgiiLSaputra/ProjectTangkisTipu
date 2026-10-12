@@ -3,7 +3,7 @@ export const modul03Dewasa = {
   num: '03',
   jalur: 'Jalur Dewasa & Karier',
   kategori: 'Mengaku Petugas',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Hukum & Data',
   title: 'Penipu Mengaku Petugas Bank & Aparat',
   icon: 'account_balance',

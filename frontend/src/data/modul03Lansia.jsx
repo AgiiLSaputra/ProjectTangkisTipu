@@ -3,7 +3,7 @@ export const modul03Lansia = {
   num: '03',
   jalur: 'Jalur Ramah Lansia',
   kategori: 'WhatsApp Palsu',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Hukum & Data',
   title: 'Chat "Ma, Ini Nomor Baru Saya"',
   icon: 'chat',

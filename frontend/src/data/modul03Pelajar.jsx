@@ -3,7 +3,7 @@ export const modul03Pelajar = {
   num: '03',
   jalur: 'Jalur Pelajar & Remaja',
   kategori: 'Identitas & NIK',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Hukum & Data',
   title: 'Pinjol Ilegal & Jebakan KTP Teman',
   icon: 'badge',

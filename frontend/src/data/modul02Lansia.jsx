@@ -3,7 +3,7 @@ export const modul02Lansia = {
   num: '02',
   jalur: 'Jalur Ramah Lansia',
   kategori: 'Telepon Dini Hari',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Waspada Tinggi',
   title: '"Anak Bapak Ditangkap—Butuh Uang Damai!"',
   icon: 'local_police',

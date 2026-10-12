@@ -113,15 +113,15 @@ export default function Hero({ onBelajar = () => {}, onUjiSkor = () => {} }) {
                             className="grid grid-cols-3 gap-space-md p-space-md rounded-2xl bg-white/15 backdrop-blur-md ring-1 ring-white/25 shadow-lg text-white">
                             <div className="flex flex-col gap-0.5">
                                 <div className="flex items-center gap-1.5 text-white">
-                                    <span className="material-symbols-outlined text-[20px] text-amber-300">timer</span>
-                                    <span className="font-headline-md text-headline-md font-bold">3 Menit</span>
+                                    <span className="material-symbols-outlined text-[20px] text-amber-300">bolt</span>
+                                    <span className="font-headline-md text-headline-md font-bold">Cepat</span>
                                 </div>
-                                <span className="font-label-sm text-label-sm text-white/80">Durasi Per Modul</span>
+                                <span className="font-label-sm text-label-sm text-white/80">Mudah Dipelajari</span>
                             </div>
                             <div className="flex flex-col gap-0.5 border-l border-white/20 pl-space-md">
                                 <div className="flex items-center gap-1.5 text-white">
-                                    <span className="material-symbols-outlined text-[20px] text-amber-300">fact_check</span>
-                                    <span className="font-headline-md text-headline-md font-bold">8 Modus</span>
+                                    <span className="material-symbols-outlined text-[20px] text-emerald-300">verified</span>
+                                    <span className="font-headline-md text-headline-md font-bold">Terverifikasi</span>
                                 </div>
                                 <span className="font-label-sm text-label-sm text-white/80">Kasus OJK & Satgas
                                     PASTI</span>
@@ -130,9 +130,9 @@ export default function Hero({ onBelajar = () => {}, onUjiSkor = () => {} }) {
                                 <div className="flex items-center gap-1.5 text-white">
                                     <span
                                         className="material-symbols-outlined text-[20px] text-tertiary-fixed">lock_reset</span>
-                                    <span className="font-headline-md text-headline-md font-bold">0 Data</span>
+                                    <span className="font-headline-md text-headline-md font-bold">100% Aman</span>
                                 </div>
-                                <span className="font-label-sm text-label-sm text-white/80">Privasi Dijamin 100%</span>
+                                <span className="font-label-sm text-label-sm text-white/80">Tanpa Data Pribadi</span>
                             </div>
                         </div>
                         {/*  Social Proof Strip  */}

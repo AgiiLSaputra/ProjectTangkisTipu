@@ -3,7 +3,7 @@ export const modul04Lansia = {
   num: '04',
   jalur: 'Jalur Ramah Lansia',
   kategori: 'Suara Tiruan AI',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Analisis Pesan',
   title: 'Suara Tiruan AI yang Persis Anak/Cucu',
   icon: 'record_voice_over',

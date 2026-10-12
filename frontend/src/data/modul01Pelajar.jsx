@@ -3,7 +3,7 @@ export const modul01Pelajar = {
   num: '01',
   jalur: 'Jalur Pelajar & Remaja',
   kategori: 'Trik Akun & Game',
-  durasi: '3 Menit',
+  durasi: 'Singkat',
   level: 'Dasar',
   title: 'Jebakan Diamond & Akun Game Murah',
   studiKasus: (
