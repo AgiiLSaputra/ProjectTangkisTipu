@@ -10,9 +10,11 @@ export default function Navbar({
   ingatkanPindah = false,
 }) {
   const [tujuanTertunda, setTujuanTertunda] = useState(null)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const go = (path) => (e) => {
     e.preventDefault()
+    setMobileMenuOpen(false) // Close mobile menu when navigating
     if (ingatkanPindah) {
       setTujuanTertunda(path)
       return
@@ -60,11 +62,103 @@ export default function Navbar({
             <a className="hidden sm:inline-flex items-center justify-center h-10 px-5 rounded-full bg-white text-[#17338f] font-label-md text-label-md font-bold shadow hover:bg-sky-50 transition-all hover:scale-105"
                 data-path="login" href="#" onClick={go('login')}>Masuk Admin</a>
             <div
-                className="w-9 h-9 rounded-full bg-white/20 border border-white/30 backdrop-blur-md flex items-center justify-center text-white">
+                className="hidden lg:flex w-9 h-9 rounded-full bg-white/20 border border-white/30 backdrop-blur-md items-center justify-center text-white">
                 <span className="material-symbols-outlined text-[20px]">person</span>
             </div>
+            {/* Hamburger Menu Button - Mobile Only */}
+            <button
+                className="lg:hidden w-9 h-9 rounded-full bg-white/20 border border-white/30 backdrop-blur-md flex items-center justify-center text-white transition-all hover:bg-white/30"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                aria-label="Toggle menu"
+                type="button">
+                <span className="material-symbols-outlined text-[20px]">
+                    {mobileMenuOpen ? 'close' : 'menu'}
+                </span>
+            </button>
         </div>
     </div>
+
+    {/* Mobile Menu Drawer */}
+    {mobileMenuOpen && (
+        <div className="lg:hidden fixed inset-0 z-[55] fade-in">
+            {/* Backdrop */}
+            <div 
+                className="absolute inset-0 bg-on-surface/50 backdrop-blur-sm"
+                onClick={() => setMobileMenuOpen(false)}
+            />
+            {/* Menu Panel */}
+            <div className="absolute top-20 left-0 right-0 bg-[#17338f] shadow-2xl slide-down">
+                <nav className="flex flex-col p-4 gap-2">
+                    <a 
+                        aria-current={active === 'beranda' ? 'page' : undefined}
+                        className={`font-label-md text-label-md px-4 py-3 rounded-xl transition-colors ${active === 'beranda' ? 'bg-white text-[#17338f] font-bold shadow-sm' : 'text-white hover:bg-white/15'}`}
+                        data-path="beranda" 
+                        href="#" 
+                        onClick={go('beranda')}>
+                        <div className="flex items-center gap-3">
+                            <span className="material-symbols-outlined text-[20px]">home</span>
+                            <span>Beranda</span>
+                        </div>
+                    </a>
+                    <a 
+                        aria-current={active === 'belajar-modus' ? 'page' : undefined}
+                        className={`font-label-md text-label-md px-4 py-3 rounded-xl transition-colors ${active === 'belajar-modus' ? 'bg-white text-[#17338f] font-bold shadow-sm' : 'text-white hover:bg-white/15'}`}
+                        data-path="belajar-modus" 
+                        href="#" 
+                        onClick={go('belajar-modus')}>
+                        <div className="flex items-center gap-3">
+                            <span className="material-symbols-outlined text-[20px]">school</span>
+                            <span>Belajar Modus</span>
+                        </div>
+                    </a>
+                    <a 
+                        aria-current={active === 'komunitas' ? 'page' : undefined}
+                        className={`font-label-md text-label-md px-4 py-3 rounded-xl transition-colors ${active === 'komunitas' ? 'bg-white text-[#17338f] font-bold shadow-sm' : 'text-white hover:bg-white/15'}`}
+                        data-path="komunitas" 
+                        href="#" 
+                        onClick={go('komunitas')}>
+                        <div className="flex items-center gap-3">
+                            <span className="material-symbols-outlined text-[20px]">groups</span>
+                            <span>Komunitas</span>
+                        </div>
+                    </a>
+                    <a 
+                        aria-current={active === 'uji-skor-tes' ? 'page' : undefined}
+                        className={`font-label-md text-label-md px-4 py-3 rounded-xl transition-colors ${active === 'uji-skor-tes' ? 'bg-white text-[#17338f] font-bold shadow-sm' : 'text-white hover:bg-white/15'}`}
+                        data-path="uji-skor-dan-tes" 
+                        href="#" 
+                        onClick={go('uji-skor-tes')}>
+                        <div className="flex items-center gap-3">
+                            <span className="material-symbols-outlined text-[20px]">psychology</span>
+                            <span>Uji Skor & Tes</span>
+                        </div>
+                    </a>
+                    <a 
+                        aria-current={active === 'kanal-lapor' ? 'page' : undefined}
+                        className={`font-label-md text-label-md px-4 py-3 rounded-xl transition-colors ${active === 'kanal-lapor' ? 'bg-white text-[#17338f] font-bold shadow-sm' : 'text-white hover:bg-white/15'}`}
+                        data-path="kanal-lapor" 
+                        href="#" 
+                        onClick={go('kanal-lapor')}>
+                        <div className="flex items-center gap-3">
+                            <span className="material-symbols-outlined text-[20px]">report</span>
+                            <span>Kanal Lapor</span>
+                        </div>
+                    </a>
+                    {/* Mobile Login Button */}
+                    <a 
+                        className="sm:hidden font-label-md text-label-md px-4 py-3 rounded-xl bg-white text-[#17338f] font-bold shadow-sm hover:bg-sky-50 transition-colors mt-2"
+                        data-path="login" 
+                        href="#" 
+                        onClick={go('login')}>
+                        <div className="flex items-center gap-3">
+                            <span className="material-symbols-outlined text-[20px]">login</span>
+                            <span>Masuk Admin</span>
+                        </div>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    )}
 
     {/* Konfirmasi pindah halaman (hanya selama di halaman Uji Skor & Tes) */}
     {tujuanTertunda && (
